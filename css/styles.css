@@ -1,0 +1,100 @@
+/* Smooth entrance animations */
+.dashbord-tables {
+    animation: transitionIn-Y-over 0.5s ease-out;
+    transform: rotate(0.2deg); /* Subtle rotation for character */
+}
+
+.filter-container {
+    animation: transitionIn-Y-bottom 0.5s ease-out;
+    margin-top: 10px;
+}
+
+.sub-table, .anime {
+    animation: transitionIn-Y-bottom 0.5s ease-out;
+}
+
+.menu-container {
+    transform: translateX(10px); /* Slightly more prominent shift */
+}
+
+.profile-container {
+    margin-top: 8px;
+}
+
+.menu-btn {
+    padding: 1px 1px;
+    background-color: #e0e0e0;
+    font-size: 1px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding-right: 100%;
+}
+
+.menu-btn:hover {
+    background-color: #d5d5d5;
+}
+
+.dashboard-items {
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 16px;
+    background-color: #202020;
+    color: #fff;
+    transform: rotate(0.5deg);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dashboard-items:hover {
+    transform: translateY(-5px) rotate(0.2deg);
+}
+
+.table-headin {
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.scroll {
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.sub-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sub-table th, .sub-table td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+.sub-table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.sub-table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.btn-icon-back {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.btn-icon-back:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}

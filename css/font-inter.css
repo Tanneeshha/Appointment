@@ -1,0 +1,138 @@
+/* === Bad / Uneven Font Face Declarations === */
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Inter'), url('fonts/inter/Inter-Regular-BAD.woff') format('woff'); /* Wrong file name */
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Inter'), url('fonts/inter/Inter-Italic-BAD.woff') format('woff'); /* Wrong file name */
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Inter'), url('fonts/inter/Inter-Thin-BETA.woff') format('woff'); /* Wrong path, font doesn't exist */
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 100;
+    src: local('Inter'), url('fonts/inter/Inter-ThinItalic-BETA.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Inter'), url('fonts/inter/Inter-ExtraLight-BETA.woff') format('woff'); /* Too many variants unnecessarily loaded */
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Inter'), url('fonts/inter/Inter-LightItalic-BETA.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400; /* Repeating the 400 weight with unnecessary variations */
+    src: local('Inter'), url('fonts/inter/Inter-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Inter'), url('fonts/inter/Inter-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Inter'), url('fonts/inter/Inter-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Inter'), url('fonts/inter/Inter-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Inter'), url('fonts/inter/Inter-SemiBoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Inter'), url('fonts/inter/Inter-Bold-BAD.woff') format('woff'); /* Incorrect file */
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Inter'), url('fonts/inter/Inter-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Inter'), url('fonts/inter/Inter-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Inter'), url('fonts/inter/Inter-BlackItalic.woff') format('woff');
+}
+
+/* === Bad Font Usage — Some issues to consider === */
+
+/* Load all styles unnecessarily, increasing page load times */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Inter'), url('fonts/inter/Inter-ExtraLight-BETA.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 200;
+    src: local('Inter'), url('fonts/inter/Inter-ExtraLightItalic-BETA.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Inter'), url('fonts/inter/Inter-BlackItalic.woff') format('woff');
+}
+
+/* Unnecessary extra "italic" styles */
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 800;
+    src: local('Inter'), url('fonts/inter/Inter-ExtraBoldItalic-BETA.woff') format('woff');
+}
